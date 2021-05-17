@@ -98,9 +98,8 @@
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
+        <div class="row gy-4" style="justify-content: space-between;">
+          <div class="col-lg-5" style="padding-top: 5%;">
             <div class="portfolio-details-slider swiper-container">
               <div class="swiper-wrapper align-items-center">
 
@@ -112,22 +111,36 @@
             </div>
           </div>
 
-          <div class="col-lg-8">
+          <div class="col-lg-6">
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
                 <li><strong>사이트 소개</strong>: 자유로운 가격제안이 가능한 중고거래 사이트입니다.</li>
-                <li><strong>핵심 기능</strong>: 채팅, 가격제안, 판매글 게시판(CRUD, 파일업로드 가능), 페이징, 검색, 프로필 설정(수정),</li>
+                <li><strong>핵심 기능</strong>: 채팅, 가격제안, 판매글 게시판(CRUD 가능), 검색, 프로필 설정(수정), 회원가입/로그인</li>
                 <li><strong>프로젝트 기간</strong>: 2021.3.8 ~ 2021.3.24</li>
-                <li><strong>Node.js, Express, Socket.io, MySQL, multer, HTML, CSS</li>
+                <li><strong>Node.js, Express, MySQL, multer, Socket.io, HTML, CSS(+bootstrap)</li>
                 <li><strong>Project URL</strong>: <a href="http://shareandfair.cafe24app.com/">shareandfair.cafe24app.com/</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
+              <h2>기술 문서</h2>
+              <div class="portfolio-document">
+                <p>express-generator 구성</p>
+                <p>MySQL DB 사용</p>
+                <p>bcrypt 비밀번호 암호화</p>
+                <p>jsonwebtoken으로 토큰활용</p>
+                <p>socket.io 를 통한 개인채팅 연결</p>
+                <p>CRUD와 파일 업로드 가능 판매글 게시판</p>
+                <p>게시글 검색, 페이징(Bootstrap 이용) 가능</p>
+                <p>moment/locale/ko를 이용한 시간 표시</p>
+                <p>가격제안(Bootstrap modal 이용)</p>
+                <p>로그인, 작성자 본인 여부 등에 따라 접근권한 설정</p>
+                <p>마이페이지에서 본인 판매글, 가격제안 게시글, 채팅내역 확인 가능</p>
+                <p>채팅내역 DB 저장 및 불러오기</p>
+                <p>프로필 수정 - 사진 업로드(multer)</p>
+                <p>회원가입/로그인 중복 방지, 유효성 검사</p>
+                <p>슬라이드형 메인 게시판(Bootstrap 이용)</p>
+              </div>
             </div>
           </div>
 

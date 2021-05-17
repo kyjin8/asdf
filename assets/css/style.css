@@ -1084,8 +1084,7 @@ section {
 }
 
 .portfolio-details .portfolio-description .portfolio-document {
-  display: inline-block;
-  width: 47%;
+  display: block;
   margin-top: 50px;
   padding: 30px;
   text-align: center;
@@ -1099,8 +1098,14 @@ section {
   border-bottom: 1px solid #eee;
 }
 
-.portfolio-details .portfolio-description .portfolio-document:last-child {
+.portfolio-details .portfolio-description .first {
+  display: inline-block;
+  width: 47%;
+}
+.portfolio-details .portfolio-description .second {
+  display: inline-block;
   position: absolute;
+  width: 47%;
   right: 0;
 }
 
