@@ -117,7 +117,7 @@
               <h3>Project information</h3>
               <ul>
                 <li><strong>사이트 소개</strong>: 이미지형 게시판 위주의 펫 커뮤니티 사이트입니다.</li>
-                <li><strong>핵심 기능</strong>: 이미지형 게시판(CRUD 가능), 회원가입/로그인, 카카오지도 api</li>
+                <li><strong>핵심 기능</strong>: 이미지형 게시판(CRUD 가능), 댓글, 회원가입/로그인, 우편주소 조회 api, 카카오지도 api</li>
                 <li><strong>프로젝트 기간</strong>: 2021.1.27~2021.2.9</li>
                 <li><strong>제작 인원</strong>: 3명</li>
                 <li>PHP, MySQL, HTML, CSS</li>
@@ -127,11 +127,14 @@
             <div class="portfolio-description">
               <h2>기술 문서</h2>
               <div class="portfolio-document">
-                <p>MySQL DB 사용</p>
+                <p>MySQL DB, php 사용</p>
                 <p>bcrypt 비밀번호 암호화</p>
+                <p>htmlspcialchars로 XSS 공격 방지</p>
                 <p>CRUD와 파일 업로드 가능 게시판</p>
                 <p>로그인, 작성자 본인 여부 등에 따라 접근권한 설정</p>
-                <p>페이징, 좋아요 가능</p>
+                <p>페이징, 좋아요 기능</p>
+                <p>페이지 내 댓글 기능</p>
+                <p>express-session으로 로그인 세션 관리</p>
                 <p>moment/locale/ko를 이용한 게시글 작성시간 표시</p>
                 <p>카카오지도 api로 동물병원, 공원 검색</p>
                 <p>javascript 사료, 훈련 정보 탭 구성</p>
@@ -140,9 +143,7 @@
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
     </section><!-- End Portfolio Details Section -->
 
@@ -150,51 +151,23 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
+  
     <div class="footer-top">
-
-      <div class="container">
-
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <a href="#header" class="scrollto footer-logo"><img src="assets/img/hero-logo.png" alt=""></a>
-            <h3>Knight</h3>
-            <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-          </div>
+  
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Knight</span></strong>. All Rights Reserved
         </div>
-
-        <div class="row footer-newsletter justify-content-center">
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email" placeholder="Enter your Email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-free-bootstrap-theme/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
-
-        <div class="social-links">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-
       </div>
-    </div>
-
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Knight</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-free-bootstrap-theme/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+  </footer>
+  <!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
