@@ -1245,6 +1245,8 @@ section {
   background: #fff;
   padding: 20px;
   border-radius: 5px;
+  width: 561px;
+  margin: 0 auto;
 }
 
 .contact .info i {
@@ -1363,6 +1365,12 @@ section {
 
 .contact .php-email-form button[type="submit"]:hover {
   background: #61b959;
+}
+
+.contact .address, .contact .email, .contact .phone {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px 30px 20px 40px;
 }
 
 @-webkit-keyframes animate-loading {
